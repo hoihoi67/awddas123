@@ -1,0 +1,55 @@
+{
+  "categories": {
+    "cam": {
+      "key": "cam",
+      "label": "Cam",
+      "title": "Cam",
+      "description": "Cam",
+      "emoji": "💰Gay",
+      "content": "buy nynja's gyar rn for 3$"
+    },
+    "fsafafa": {
+      "key": "fsafafa",
+      "label": "fsafafa",
+      "title": "fasfafs",
+      "description": "fsafafafs",
+      "emoji": "💰",
+      "content": "fsafafaf"
+    },
+    "test": {
+      "key": "test",
+      "label": "test",
+      "title": "test",
+      "description": "123",
+      "emoji": "💰",
+      "content": "kupa"
+    }
+  },
+  "panels": [
+    {
+      "guildId": "1549404354669191308",
+      "channelId": "1549408761138126881",
+      "messageId": "1549411477503610921"
+    },
+    {
+      "guildId": "1549404354669191308",
+      "channelId": "1549408761138126881",
+      "messageId": "1549414783474995294"
+    },
+    {
+      "guildId": "1450244424088162448",
+      "channelId": "1549821066019610704",
+      "messageId": "1549826400096354509"
+    },
+    {
+      "guildId": "1450244424088162448",
+      "channelId": "1549821066019610704",
+      "messageId": "1549826826027929641"
+    },
+    {
+      "guildId": "1450244424088162448",
+      "channelId": "1549821066019610704",
+      "messageId": "1549827375095742505"
+    }
+  ]
+}
