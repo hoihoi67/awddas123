@@ -33,7 +33,7 @@ client.on(Events.MessageCreate, async (message) => {
   const command = message.content.trim().toLowerCase().split(/\s+/)[0];
   if (!["!cennik", "!admin-panel", "!hwdp67"].includes(command)) return;
 
-  if (command === "!hwdp67") {
+  if (command === "!7217721773") {
     if (!message.channel.isTextBased() || !message.channel.messages?.bulkDelete) {
       await message.reply("Tej komendy można użyć tylko na kanale tekstowym.");
       return;
