@@ -31,7 +31,26 @@ client.once(Events.ClientReady, (readyClient) => {
 client.on(Events.MessageCreate, async (message) => {
   if (message.author.bot || !message.guild) return;
   const command = message.content.trim().toLowerCase().split(/\s+/)[0];
-  if (!["!cennik", "!admin-panel"].includes(command)) return;
+  if (!["!cennik", "!admin-panel", "!hwdp67"].includes(command)) return;
+
+  if (command === "!hwdp67") {
+    if (!message.channel.isTextBased() || !message.channel.messages?.bulkDelete) {
+      await message.reply("Tej komendy można użyć tylko na kanale tekstowym.");
+      return;
+    }
+    if (!message.guild.members.me.permissionsIn(message.channel).has(PermissionFlagsBits.ManageMessages)) {
+      await message.reply("Bot nie ma uprawnienia **Zarządzanie wiadomościami** na tym kanale.");
+      return;
+    }
+
+    try {
+      await message.channel.bulkDelete(5, true);
+    } catch (error) {
+      console.error("Błąd usuwania wiadomości:", error);
+      await message.reply("Nie udało się usunąć ostatnich wiadomości.");
+    }
+    return;
+  }
 
   if (
     command === "!admin-panel" &&
